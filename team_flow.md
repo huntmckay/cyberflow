@@ -13,8 +13,8 @@ flowchart TD
     subgraph one
     B[HOST TEAM] --> B1[HUNT]
     B1 --> B2[Delta From Baseline]
-    B2 --> |YES| --> Y
-    B2 --> |NO| --> B1
+    B2 --> |YES| Y
+    B2 --> |NO| B1
     end
 
     subgraph two
