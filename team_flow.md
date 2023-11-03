@@ -7,7 +7,7 @@ flowchart TD
     A --> B
     B[HOST TEAM] --> B1[HUNT]
     B1 --> B2[Delta From Baseline]
-    B2 --> |YES| --> Y 
+    B2 --> |YES| --> report
     B2 --> |NO| --> B1
     subgraph one
     end
@@ -33,7 +33,18 @@ flowchart TD
     E2 --> Z
     subgraph four
     end
+
+    X --> Y
     Y[Report to First Line] --> Z
+    subgraph report
+    end
+
+    one --> report
+    two --> report
+    three --> report
+    four --> report
+
+
     Z[END]
 ```
 # A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
