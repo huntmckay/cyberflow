@@ -3,18 +3,18 @@
 Title: Scanning and Validation Flow
 ---
 flowchart TD
-    A[Validate Baseline] --> B[HOST] & C[NETWORK] & D[INTEL] --> F{HUNT}
-    F --> G[Delta From Baseline] --> H{Finding?}
-    H --> |NO| --> F
-    H --> |YES| --> I[DOCUMENT and Nofity other teams] --> J[IOC?]
-    J --> |NO| --> I
-    K --> |YES| --> L[Report To First Line Leader] & M[Report To Intel] --> O[Blue Brief to Orange]
-    M --> N[IOC Validation] --> O[Blue Brief to Orange]
-    P --> |NO| --> Q[Reprioritize CAL?]
-    P --> |YES| --> R[Pack up and debrief] -- Z[END]
-    Q --> |NO| --> A
-    Q --> |YES| --> A
+    A[Validate Baseline] --> B[HOST] & C[NETWORK] & D[INTEL] --> E{HUNT}
+    E --> F[Delta From Baseline] --> G{Finding?}
+    G --> |NO| --> H
+    I --> |YES| --> J[DOCUMENT and Nofity other teams] --> K[IOC?]
+    K --> |NO| --> H
+    L --> |YES| --> M[Report To First Line Leader] & N[Report To Intel] --> P[Blue Brief to Orange]
+    L --> O[IOC Validation] --> P[Blue Brief to Orange]
+    O --> |NO| --> P[Reprioritize CAL?]
+    O --> |YES| --> R[Pack up and debrief] -- S[END]
+    P --> |NO| --> A
+    P --> |YES| --> A
 ```
-
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 # TODO - Color Code who owns which step
 # TODO - Shape code paperwork, computer work, intel, etc
