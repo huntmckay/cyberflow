@@ -3,8 +3,12 @@
 Title: Scanning and Validation Flow
 ---
 flowchart TD
-    A[Validate Baseline] --> B[HOST] & C[NETWORK] & D[INTEL] --> E{HUNT}
-    E --> F[Delta From Baseline] --> G{Finding?}
+    A[Validate Baseline] 
+    A --> B[HOST] --> E
+    A --> C[NETWORK] --> E
+    A --> D[INTEL] --> E
+    E{HUNT} --> F[Delta From Baseline]
+    F --> G{Finding?}
     G --> |NO| --> H
     I --> |YES| --> J[DOCUMENT and Nofity other teams] --> K[IOC?]
     K --> |NO| --> H
