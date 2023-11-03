@@ -1,4 +1,7 @@
 ```mermaid
+---
+Title: Cyber Response Flow
+---
 flowhart LR
     subgraph subgraph1
         direction TB
@@ -8,11 +11,7 @@ flowhart LR
         direction TB
         top2[top] --> bottom2[bottom]
     end
-    %% ^ These subgraphs are identical, except for the links to them:
 
-    %% Link *to* subgraph1: subgraph1 direction is maintained
     outside --> subgraph1
-    %% Link *within* subgraph2:
-    %% subgraph2 inherits the direction of the top-level graph (LR)
     outside ---> top2c
 ```
