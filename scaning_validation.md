@@ -7,7 +7,9 @@ flowchart TD
     A --> B[HOST]
     A --> C[NETWORK]
     A --> D[INTEL]
-    B & C & D --> E{HUNT}
+    B --> E[HUNT]
+    C --> E[HUNT]
+    D --> E[HUNT]
     E --> F[Delta From Baseline]
     F --> G{Finding?}
     G --> |NO| --> H
