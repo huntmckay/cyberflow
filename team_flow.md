@@ -22,15 +22,15 @@ flowchart TD
     NETWORK1[Delta From Baseline] --> REPORTING
     end
 
+    B --> HOST1
+    B --> HUNT1
+    B --> INTEL1
+    B --> NETWORK1
 
     subgraph REPORTING
     Z[Report to First Line]
     end
 
-    B --> HOST1
-    B --> HUNT1
-    B --> INTEL1
-    B --> NETWORK1
 
 
 ```
