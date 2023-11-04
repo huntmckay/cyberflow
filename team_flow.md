@@ -11,28 +11,26 @@ flowchart TD
     end
 
     subgraph HUNT 
-    D1 --> D2[Delta From Baseline]
-    D2 --> REPORTING
+    HUNT1 --> [Delta From Baseline] --> REPORTING
     end
 
-    subgraph INTEL
-    E1 --> E2[Delta From Baseline]
-    E2 --> REPORTING
+    subgraph INTEL 
+    INTEL1 --> [Delta From Baseline] --> REPORTING
     end
 
     subgraph NETWORK 
-    E1 --> E2[Delta From Baseline]
-    E2 --> REPORTING
+    NETWORK1--> [Delta From Baseline] --> REPORTING
     end
+
 
     subgraph REPORTING
     Z[Report to First Line]
     end
 
     B --> HOST1
-    B --> HUNT
-    B --> INTEL
-    B --> NETWORK
+    B --> HUNT1
+    B --> INTEL1
+    B --> NETWORK1
 
     HOST --> REPORTING
     HUNT --> REPORTING
