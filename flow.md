@@ -3,6 +3,7 @@
 Title: Command planning phase
 ---
 flowchart TD
+    subgraph init
     A[Cyber Respose/Audit Request]
     B[Established MOU?]
     C[Unit Assessment for personel and equiptment]
@@ -14,7 +15,7 @@ flowchart TD
     D --> k1
     D --> r1
     H --> I[Enumerate the network]
-    I --> J[STOP]
+    end
 
     subgraph Response
     r1[Incidents?] --> r2
