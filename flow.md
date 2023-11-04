@@ -23,7 +23,7 @@ flowchart TD
     r3[Critical Elements?] --> r4
     r4[Orange Baseline of users and computers?] --> r5
     r5[Does MPB match Cyber Request]
-    r5 --> |NO| A
+    r5 --> |NO| Reeval
     r5 --> |YES| H
     end
 
@@ -33,7 +33,7 @@ flowchart TD
     k3[Critical Elements?] --> k4
     k4[Orange Baseline of users and computers?] --> k5
     k5[Does MPB match Cyber Request]
-    k5 --> |NO| A
+    k5 --> |NO| Reeval
     k5 --> |YES| H
     end
 ```
