@@ -4,11 +4,10 @@ Title: Scanning and Validation Flow
 ---
 flowchart TD
     A[Baseline Validation] --> B
-
     B[Enumeration]
 
     subgraph HOST 
-    C2[Delta From Baseline] --> REPORTING
+    HOST1[Delta From Baseline] --> REPORTING
     end
 
     subgraph HUNT 
@@ -30,7 +29,7 @@ flowchart TD
     Z[Report to First Line]
     end
 
-    B --> HOST
+    B --> HOST1
     B --> HUNT
     B --> INTEL
     B --> NETWORK
