@@ -32,12 +32,13 @@ flowchart TD
     R2[Report to First Line Leader]
     R3[Line Leader informs other teams]
     R4[Enough for IOC?]
+    R5[Inform Commander call attention to the SOC]
 
     R1 --> R2
     R2 --> R3
     R3 --> R4
-    R4 --> |YES| Inform Commander call attention to the SOC
-    R4 --> |NO | B
+    R4 - YES -> R5
+    R4 - NO -> B
     end
 
 ```
