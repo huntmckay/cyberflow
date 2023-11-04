@@ -14,7 +14,7 @@ flowchart TD
     D --> k1
     D --> r1
     H --> I[Enumerate the network]
-    I --> J[END]
+    I --> J[STOP]
 
     subgraph Response
     r1[Incidents?] --> r2
