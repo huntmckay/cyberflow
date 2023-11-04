@@ -3,15 +3,6 @@
 Title: Command planning phase
 ---
 flowchart TD
-    A[Cyber Respose/Audit Request] --> B[Established MOU?]
-    B --> C[Unit Assessment for personel and equiptment]
-    C --> D[Orange Mission Brief to Cyber unit]
-    D --> a1
-    D --> r1
-    H[Guidence of Priorities]
-    H --> I[Enumerate the network]
-    I --> J[END]
-
     subgraph Response
     r1[Incidents?] --> r2
     r2[Threats?] --> r3
@@ -31,6 +22,15 @@ flowchart TD
     a5 --> |NO| A
     a5 --> |YES| H
     end
+
+    A[Cyber Respose/Audit Request] --> B[Established MOU?]
+    B --> C[Unit Assessment for personel and equiptment]
+    C --> D[Orange Mission Brief to Cyber unit]
+    D --> a1
+    D --> r1
+    H[Guidence of Priorities]
+    H --> I[Enumerate the network]
+    I --> J[END]
 ```
 
 # TODO - Color Code who owns which step
