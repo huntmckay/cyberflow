@@ -11,7 +11,7 @@ flowchart TD
     A --> B
     B --> C
     C --> D
-    D --> a1
+    D --> k1
     D --> r1
     H --> I[Enumerate the network]
     I --> J[END]
@@ -27,13 +27,13 @@ flowchart TD
     end
 
     subgraph Audit
-    a1[Incidents?] --> a2
-    a2[Threats?] --> a3
-    a3[Critical Elements?] --> a4
-    a4[Orange Baseline of users and computers?] --> a5
-    a5[Does MPB match Cyber Request]
-    a5 --> |NO| A
-    a5 --> |YES| H
+    k1[Incidents?] --> k2
+    k2[Threats?] --> k3
+    k3[Critical Elements?] --> k4
+    k4[Orange Baseline of users and computers?] --> k5
+    k5[Does MPB match Cyber Request]
+    k5 --> |NO| A
+    k5 --> |YES| H
     end
 ```
 
