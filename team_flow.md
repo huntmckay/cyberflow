@@ -28,10 +28,17 @@ flowchart TD
     B --> NETWORK1
 
     subgraph REPORTING
-    Z[Report to First Line]
+    R1[Accuratly Document finding]
+    R2[Report to First Line Leader]
+    R3[Line Leader informs other teams]
+    R4[Enough for IOC?]
+
+    R1 --> R2
+    R2 --> R3
+    R3 --> R4
+    R4 --> |YES| Inform Commander call attention to the SOC
+    R4 --> |NO | B
     end
-
-
 
 ```
 # A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
