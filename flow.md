@@ -6,8 +6,8 @@ flowchart TD
     A[Cyber Respose/Audit Request] --> B[Established MOU?]
     B --> C[Unit Assessment for personel and equiptment]
     C --> D[Orange Mission Brief to Cyber unit]
-    D --> Audit
-    D --> Response
+    D --> a1
+    D --> r1
     H[Guidence of Priorities]
     H --> I[Enumerate the network]
     I --> J[END]
