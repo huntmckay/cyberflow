@@ -7,19 +7,19 @@ flowchart TD
     B[Enumeration]
 
     subgraph HOST 
-    HOST1[Delta From Baseline] --> REPORTING
+    HOST1[Delta From Baseline] --> R1
     end
 
     subgraph HUNT 
-    HUNT1[Delta From Baseline] --> REPORTING
+    HUNT1[Delta From Baseline] --> R1
     end
 
     subgraph INTEL 
-    INTEL1[Delta From Baseline] --> REPORTING
+    INTEL1[Delta From Baseline] --> R1
     end
 
     subgraph NETWORK 
-    NETWORK1[Delta From Baseline] --> REPORTING
+    NETWORK1[Delta From Baseline] --> R1
     end
 
     B --> HOST1
