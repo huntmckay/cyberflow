@@ -7,11 +7,6 @@ flowchart TD
 
     B[Enumeration]
 
-    B --> HOST
-    B --> HUNT
-    B --> INTEL
-    B --> NETWORK
-
     subgraph HOST 
     C2[Delta From Baseline] --> REPORTING
     end
@@ -31,14 +26,20 @@ flowchart TD
     E2 --> REPORTING
     end
 
+    subgraph REPORTING
+    Z[Report to First Line]
+    end
+
+    B --> HOST
+    B --> HUNT
+    B --> INTEL
+    B --> NETWORK
+
     HOST --> REPORTING
     HUNT --> REPORTING
     INTEL --> REPORTING
     NETWORK --> REPORTING
 
-    subgraph REPORTING
-    Z[Report to First Line]
-    end
 ```
 # A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 # TODO - Color Code who owns which step
