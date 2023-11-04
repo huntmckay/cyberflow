@@ -13,8 +13,7 @@ flowchart TD
     B --> NETWORK
 
     subgraph HOST 
-    C1 --> C2[Delta From Baseline]
-    C2 --> REPORTING
+    C2[Delta From Baseline] --> REPORTING
     end
 
     subgraph HUNT 
