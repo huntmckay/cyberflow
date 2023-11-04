@@ -20,6 +20,7 @@ flowchart TD
     r5[Does MPB match Cyber Request]
     r5 --> |NO| A
     r5 --> |YES| H
+    end
 
     subgraph Audit
     a1[Incidents?] --> a2
@@ -29,6 +30,7 @@ flowchart TD
     a5[Does MPB match Cyber Request]
     a5 --> |NO| A
     a5 --> |YES| H
+    end
 ```
 
 # TODO - Color Code who owns which step
