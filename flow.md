@@ -8,13 +8,11 @@ flowchart TD
     B[Established MOU?]
     C[Unit Assessment for personel and equiptment]
     D[Orange Mission Brief to Cyber unit]
-    H[Guidence of Priorities]
     A --> B
     B --> C
     C --> D
     D --> k1
     D --> r1
-    H --> I[Enumerate the network]
     end
 
     subgraph Response
@@ -36,6 +34,9 @@ flowchart TD
     k5 --> |NO| Reeval
     k5 --> |YES| H
     end
+
+    H[Guidence of Priorities]
+    H --> I[Enumerate the network]
 ```
 
 # TODO - Color Code who owns which step
