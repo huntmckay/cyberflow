@@ -37,8 +37,8 @@ flowchart TD
     R1 --> R2
     R2 --> R3
     R3 --> R4
-    R4 - YES -> R5
-    R4 - NO -> B
+    R4 -- YES --> R5
+    R4 -- NO --> B
     end
 
 ```
