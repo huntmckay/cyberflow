@@ -38,8 +38,8 @@ flowchart TD
     NETWORK --> REPORTING
 
     subgraph REPORTING
-    Z[Report to First Line] --> Z2
-    Z2[END]
+    Z[Report to First Line]
+    end
 ```
 # A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 # TODO - Color Code who owns which step
