@@ -11,15 +11,15 @@ flowchart TD
     end
 
     subgraph HUNT 
-    HUNT1 --> [Delta From Baseline] --> REPORTING
+    HUNT1[Delta From Baseline] --> REPORTING
     end
 
     subgraph INTEL 
-    INTEL1 --> [Delta From Baseline] --> REPORTING
+    INTEL1[Delta From Baseline] --> REPORTING
     end
 
     subgraph NETWORK 
-    NETWORK1--> [Delta From Baseline] --> REPORTING
+    NETWORK1[Delta From Baseline] --> REPORTING
     end
 
 
