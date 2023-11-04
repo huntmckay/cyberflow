@@ -3,43 +3,39 @@
 Title: Scanning and Validation Flow
 ---
 flowchart TD
-    A[Baseline Validation] 
+    A[Baseline Validation] --> B
 
-    A --> B
-    A --> C
-    A --> D
-    A --> E
+    B[Enumeration]
 
-    subgraph one
-    B[HOST TEAM] --> B1[HUNT]
-    B1 --> B2[Delta From Baseline]
-    B2 --> |YES| Y
-    B2 --> |NO| B1
-    end
+    B --> HOST
+    B --> HUNT
+    B --> INTEL
+    B --> NETWORK
 
-    subgraph two
-    C[NETWORK TEAM] --> C1[HUNT]
+    subgraph HOST 
     C1 --> C2[Delta From Baseline]
     C2 --> Z
     end
 
-    subgraph three
-    D[SIEM TEAM] --> D1[HUNT]
+    subgraph HUNT 
     D1 --> D2[Delta From Baseline]
     D2 --> Z
     end
 
-    subgraph four
-    E[INTEL] --> E1[HUNT]
+    subgraph INTEL
     E1 --> E2[Delta From Baseline]
     E2 --> Z
     end
 
+    subgraph NETWORK 
+    E1 --> E2[Delta From Baseline]
+    E2 --> Z
+    end
 
-    one --> Y
-    two --> Y
-    three --> Y
-    four --> Y
+    HOST --> Y
+    HUNT --> Y
+    INTEL --> Y
+    NETWORK --> Y
 
     Y[Report to First Line] --> Z
     Z[END]
