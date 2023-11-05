@@ -11,11 +11,10 @@ flowchart TD
     A --> B
     B --> C
     C --> D
-    D --> k1
-    D --> r1
     end
 
     subgraph Response
+    D --> r1
     r1[Incidents?] --> r2
     r2[Threats?] --> r3
     r3[Critical Elements?] --> r4
@@ -26,6 +25,7 @@ flowchart TD
     end
 
     subgraph Audit
+    D --> k1
     k1[Incidents?] --> k2
     k2[Threats?] --> k3
     k3[Critical Elements?] --> k4
